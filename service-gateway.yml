@@ -4,5 +4,5 @@ server:
 zuul:
     routes:
         service-cep:
-            path: /consulta-cep/**
+            path: /v1/consulta-cep/{cep}**
             url: http://localhost:9093/v1/endereco
