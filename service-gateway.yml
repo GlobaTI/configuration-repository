@@ -3,9 +3,6 @@ server:
     
 zuul:
     routes:
-        service-cep:
-            path: /v1/consulta-cep/{cep}**
-            url: http://localhost:9093/v1/endereco
         service-cadastra-pessoa:
             path: v1/cadastro/save**
             url: http://localhost:9094/v1/cadastro/save
