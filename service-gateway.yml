@@ -6,3 +6,15 @@ zuul:
         service-cep:
             path: /v1/consulta-cep/{cep}**
             url: http://localhost:9093/v1/endereco
+            
+eureka:
+    instance:
+        hostname: localhost
+        port: 9091
+    client:
+        registerWithEureka: true
+        fetchRegistry: false
+        serviceUrl:
+            defaultZone: http://${eureka.instance.hostname}:${eureka.instance.port}/eureka/
+    server:
+        wait-time-in-ms-when-sync-empty: 3000
