@@ -1,2 +1,8 @@
 server:
     port: 9091
+    
+zuul:
+    routes:
+        service-cep:
+            path: /consulta-cep/**
+            url: http://localhost:9093/v1/endereco
