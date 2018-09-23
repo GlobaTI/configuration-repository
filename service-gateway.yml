@@ -4,7 +4,7 @@ server:
 zuul:
     routes:
         service-cadastra-pessoa:
-            path: v1/cadastro/save/**
+            path: /v1/cadastro/save/**
             url: http://localhost:9094/v1/cadastro/save
             
 eureka:
