@@ -1,2 +1,10 @@
 server:
     port: 9093
+    
+hystrix:
+  command:
+    default:
+      execution:
+        isolation:
+          thread:
+            timeoutInMilliseconds: 200
